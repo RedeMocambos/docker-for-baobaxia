@@ -1,7 +1,7 @@
 FROM phusion/baseimage
 
 RUN apt-get update && apt-get install -y git wget && \
-    cd /root && git clone -b fix-install-for-ubuntu --single-branch https://github.com/sydro/baobaxia.git && \
+    cd /root && git clone -b master --single-branch https://github.com/RedeMocambos/baobaxia.git && \
     locale-gen && locale-gen pt_BR.UTF-8
 
 RUN rm -f /etc/service/sshd/down && \
