@@ -4,10 +4,14 @@ Bootstrap of a docker ecosystem with clone of baobaxia project for tests
 # Intro
 
 This is a docker ecosystem with two nodes to test baobaxia project.
-More info: [https://github.com/RedeMocambos/baobaxia](https://github.com/RedeMocambos/baobaxia)
 
-Dockerfile is based on phusion/baseimage
-More info: [https://github.com/phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
+The ecosystem includes :
+* Ubuntu 14.04 LTS (docker image: phusion/baseimage)
+* Debian jessie/8.3 (docker image: debian)
+
+More info:
+* Baobaxia project: [https://github.com/RedeMocambos/baobaxia](https://github.com/RedeMocambos/baobaxia)
+* phusion baseimage: [https://github.com/phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
 
 # Requirements
 

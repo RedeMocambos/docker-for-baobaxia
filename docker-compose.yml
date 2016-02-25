@@ -2,26 +2,30 @@ version: '2'
 
 services:
   node1:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.ubuntu
     container_name: baobaxia_node1
     hostname: node1
     environment:
       - TERM=xterm-256color
     networks:
       - baobaxia
-    # volumes:
-    #   - ../baobaxia:/opt/baobaxia
+    volumes:
+      - ../baobaxia:/opt/baobaxia
 
   node2:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.debian
     container_name: baobaxia_node2
     hostname: node2
     environment:
       - TERM=xterm-256color
     networks:
       - baobaxia
-    # volumes:
-    #   - ../baobaxia:/opt/baobaxia
+    volumes:
+      - ../baobaxia:/opt/baobaxia
 
 networks:
   baobaxia:
